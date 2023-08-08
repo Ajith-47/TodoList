@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState,createContext}  from "react";
+import {Route,Routes} from "react-router";
+import Welcome from './Welcome'
+import Login from './Login'
+import Signin from './signin'
 
-function App() {
+export const userCredentialsContext=React.createContext();
+export const dbCredentialsContext=React.createContext();
+export const emailCredentialsContext=React.createContext();
+
+function App(){
+  const userCredentialsState=useState(null);
+  const dbCredentialsState=useState(null);
+  const emailCredentialsState=useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <userCredentialsContext.Provider value={userCredentialsState}>
+        <dbCredentialsContext.Provider value={dbCredentialsState}>
+          <emailCredentialsContext.Provider value={emailCredentialsState}>
+            <Routes>
+              <Route path="/" element={<Welcome />}></Route>
+              <Route path="/signin" element={<Signin />}></Route>
+              <Route path="/login" element={<Login />}></Route>
+            </Routes>
+          </emailCredentialsContext.Provider>  
+        </dbCredentialsContext.Provider>
+      </userCredentialsContext.Provider>
     </div>
   );
 }

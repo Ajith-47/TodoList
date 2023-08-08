@@ -1,0 +1,203 @@
+/* Full Document */
+
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* Headers */
+
+.headers h1{
+    margin: 0px;
+    padding: 10px;
+}
+
+
+/* Body and Background */
+
+body{
+    margin: 0px;
+    min-height: 100vh;
+    background-image: url("https://img00.deviantart.net/5da1/i/2008/205/e/1/clouds_18_by_egomod.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+/* Footers */
+
+.footers{
+    height: 100px;
+    position:sticky;
+    top:100%;
+    
+}
+
+.footers a{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+    transition-duration: 0.5s;
+}
+
+.footers a:hover{
+    background-color:#F8F6F4;
+}
+
+.footers div{
+    margin-left: 500px;
+}
+
+.footers div p{
+    margin-left: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.welcomeContainer{
+    display:flex;
+    justify-content: center;
+    width:300px;
+    height:300px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+
+.welcomeContainerOuter{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
+.signinButton,.loginButton{
+    text-decoration: none;
+    color: black;
+    display: block;
+    border: 2px solid black;
+    padding-left:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    transition-duration: 0.5s;
+}
+
+.signinButton:hover,.loginButton:hover{
+    background-color:#FAF7F0;
+}
+
+.signcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.signcontainer .outerdiv{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.innerdiv{
+    padding: 15px;
+}
+
+.signcontainer input, .logindiv input{
+    display: block;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 20px;
+    width: 250px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.signcontainer button{
+    border-radius: 10px;
+}
+
+.logincontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+.logindiv{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.innerlogindiv{
+    padding:15px;
+}
+
+.logindiv button, .innerdiv button{
+    display: block;
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    width: 260px;
+    margin-bottom: 10px;
+    margin-top: 20px;   
+}
+
+
+/* Todo List Page */
+
+
+.todocontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.todocontainer form{
+    margin-bottom: 10px;
+}
+
+.todocontainer .outtodocontainer{
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.todocontentitem{
+    margin-bottom: 20px;
+    
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.todocontainer [name="textcontent"]{
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color:rgba(0,0,0,0);
+    height:20px;
+    width:200px
+}
+
+.todocontainer [name="submitbutton"]{
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 10px;
+    height:30px;
+    width:30px
+}
+
+.intodocontainer{
+    margin:15px 30px;
+}
+
+
+
+.todocontainer [name="cancelbutton"]{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 40%;
+    border: none;
+}
